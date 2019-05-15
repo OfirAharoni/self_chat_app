@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FBFBEF">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Details"
+        android:id="@+id/title_tv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+
+    <TextView
+        android:id="@+id/device_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title_tv"
+        android:layout_marginBottom="-42dp"
+        android:text="Device:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/device_tv"
+        android:layout_alignRight="@+id/title_tv"
+        android:id="@+id/device_et"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/device_tv"
+        />
+
+
+    <TextView
+        android:id="@+id/ts_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/device_tv"
+        android:layout_marginBottom="-42dp"
+        android:text="Date and Time: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ts_tv"
+        android:layout_alignRight="@+id/title_tv"
+        android:id="@+id/ts_et"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/ts_tv"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/del_btn"
+        android:text="PERMANENT DELETE"
+        android:textAllCaps="false"
+        android:background="#CEF6EC"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/ts_tv"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>
